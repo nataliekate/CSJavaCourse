@@ -86,7 +86,7 @@ public class Minesweeper {
                     }
                 }
             }
-            System.out.println();
+//            System.out.println();
         }
 
         for(int i = 0; i < m; i++) {

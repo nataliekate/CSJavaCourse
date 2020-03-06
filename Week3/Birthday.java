@@ -2,14 +2,13 @@ public class Birthday {
     public static void main(String[] args) {
         int n = Integer.parseInt(args[0]);
         int trials = Integer.parseInt(args[1]);
-        int peopleSum = 1;
-        int[] count = new int[n];
+        int[] count = new int[trials];
 
         for(int i = 0; i < trials; i++) {
             boolean[] room = new boolean[n];
             int people = 0;
 
-            while(true) {
+            while(people < trials) {
                 // Choose a birthday for the next person, uniformly at random between 0 and n-1
                 int randomBirthday = (int) (Math.random() * n);
                 people++;
